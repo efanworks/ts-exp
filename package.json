@@ -1,9 +1,10 @@
 {
   "name": "@efanworks/ts-exp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "type": "module",
   "main": "./dist/index.js",
+  "types": "./dist/interval.d.cts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "type-check": "tsc --noEmit"
