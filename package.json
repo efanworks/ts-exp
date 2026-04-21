@@ -1,6 +1,6 @@
 {
   "name": "@efanworks/ts-exp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "type": "module",
   "main": "./dist/index.js",
@@ -8,6 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "type-check": "tsc --noEmit"
   },
+  "files": [
+    "./dist"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
