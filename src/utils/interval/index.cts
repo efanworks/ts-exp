@@ -1,9 +1,9 @@
 const maxInterval = 12;
-function getArrayLength(arr) {
+function getArrayLength<T>(arr: T[]) {
   return arr.length;
 }
 
-module.exports = {
+export = {
   getArrayLength,
   maxInterval
 };

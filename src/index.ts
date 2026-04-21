@@ -16,6 +16,8 @@
 
 // const pel = new MathIt.People("fg");
 // console.log(MathIt.PI);
-import { getArrayLength, maxInterval } from "./utils/interval/index.js";
+import interval from "./utils/interval/index.cjs";
+
+const { getArrayLength, maxInterval } = interval;
 
 export { getArrayLength, maxInterval };
