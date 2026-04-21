@@ -1,16 +1,22 @@
 {
-  "name": "ts-exp",
+  "name": "@efanworks/ts-exp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "type-check": "tsc ./src/file1.ts"
+    "type-check": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^6.0.2"
+    "react": "^19.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "typescript": "^6.0.3"
   }
 }
