@@ -25,6 +25,9 @@
     "build": "tsc",
     "prepare": "husky"
   },
+  "lint-staged": {
+    "*.{js,ts}": []
+  },
   "files": [
     "./dist"
   ],
