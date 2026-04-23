@@ -1,21 +1,29 @@
 {
   "name": "@efanworks/ts-exp",
-  "version": "1.0.8",
+  "version": "1.0.21",
   "description": "",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
     "./sum": {
       "types": "./dist/utils/sum/index.d.ts",
       "import": "./dist/utils/sum/index.js"
+    },
+    "./interval": {
+      "types": "./dist/utils/interval/index.cts",
+      "require": "./dist/utils/interval/index.cjs"
     }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "type-check": "tsc --noEmit",
-    "version": "npm version patch",
-    "release": "npm version patch && npm run type-check && npm publish --tag alpha"
+    "build": "tsc",
+    "release": "npm run build && npm publish --tag=alpha"
   },
   "files": [
     "./dist"

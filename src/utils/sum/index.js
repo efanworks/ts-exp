@@ -4,5 +4,9 @@
  * @returns {number} 和
  */
 export function sum(...args) {
-  return Math.sum(...args);
+  return args.reduce((pre, cur) => {
+    return pre + cur;
+  }, 0);
 }
+
+sum(1, "2");
