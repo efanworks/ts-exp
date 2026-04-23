@@ -24,4 +24,4 @@ import { sum } from "./utils/sum/index.js";
 
 const { getArrayLength, maxInterval } = interval;
 
-export { getArrayLength, maxInterval, sum };
+export { getArrayLength, maxInterval };
