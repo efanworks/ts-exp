@@ -6,7 +6,7 @@
     "outDir": "./dist",
 
     "allowJs": true,
-    "checkJs": false,
+    "checkJs": true,
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",

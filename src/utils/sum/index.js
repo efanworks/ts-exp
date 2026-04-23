@@ -9,4 +9,4 @@ export function sum(...args) {
   }, 0);
 }
 
-sum(1, "2");
+sum(1, 2);
