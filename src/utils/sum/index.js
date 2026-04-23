@@ -4,7 +4,6 @@
  * @returns {number} 和
  */
 export function sum(...args) {
-  console.log(args);
   return args.reduce((pre, cur) => {
     return pre + cur;
   }, 0);
