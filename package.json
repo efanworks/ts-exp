@@ -23,7 +23,8 @@
     "test": "node ./src/test/index.js",
     "type-check": "tsc --noEmit",
     "build": "tsc",
-    "prepare": "husky"
+    "prepare": "husky",
+    "prepublishOnly": "npm build"
   },
   "lint-staged": {
     "*.{js,ts}": []
