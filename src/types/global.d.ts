@@ -9,5 +9,3 @@ declare global {
 export interface Person {
   name: string;
 }
-
-export {};

@@ -9,14 +9,6 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
-    },
-    "./sum": {
-      "types": "./dist/utils/sum/index.d.ts",
-      "import": "./dist/utils/sum/index.js"
-    },
-    "./interval": {
-      "types": "./dist/utils/interval/index.cts",
-      "require": "./dist/utils/interval/index.cjs"
     }
   },
   "scripts": {
