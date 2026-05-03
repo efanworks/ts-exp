@@ -6,6 +6,4 @@ declare global {
   var mf_employee: MFEmployee;
 }
 
-export interface Person {
-  name: string;
-}
+export {};
