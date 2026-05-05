@@ -1,6 +1,6 @@
 {
   "name": "@efanworks/ts-exp",
-  "version": "1.0.28-alpha.6",
+  "version": "1.0.28-alpha.7",
   "description": "",
   "type": "module",
   "main": "./dist/index.js",
