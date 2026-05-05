@@ -11,9 +11,9 @@
     // "checkJs": true,
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
+    "module": "esnext",
     "target": "es2015",
-    "moduleResolution": "nodenext",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
     // "allowSyntheticDefaultImports": true,
     // "types": [],

@@ -1,4 +1,4 @@
-import { Person, type PersonConstructor } from "./utils/person.js";
+import { Person, type PersonConstructor } from "./utils/person";
 
 type PersonConstructorParametersName =
   ConstructorParameters<PersonConstructor>[0];

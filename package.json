@@ -14,7 +14,7 @@
   "scripts": {
     "test": "node src/tests/index.js",
     "type-check": "tsc --noEmit",
-    "build": "tsc",
+    "build": "rollup --config rollup.config.js",
     "prepare": "husky",
     "prepublishOnly": "npm run build"
   },
@@ -34,6 +34,12 @@
     "react": "^19.2.5"
   },
   "devDependencies": {
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.3",
+    "@babel/preset-typescript": "^7.28.5",
+    "@rollup/plugin-babel": "^7.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "eslint": "^9.39.4",
@@ -44,6 +50,7 @@
     "jiti": "^2.6.1",
     "lint-staged": "^16.4.0",
     "prettier": "^3.8.3",
+    "rollup": "^4.60.3",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.59.0"
   },
