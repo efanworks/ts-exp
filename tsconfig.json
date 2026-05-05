@@ -1,13 +1,12 @@
 {
   // Visit https://aka.ms/tsconfig to read more about this file
-  // "exclude": ["eslint.config.ts", "dist"],
-  "include": ["src/**/*"],
+  "include": ["src"],
   "exclude": ["src/tests"],
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist/types",
     "allowJs": true,
-    // "checkJs": true,
+    "checkJs": true,
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "esnext",
