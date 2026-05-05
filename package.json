@@ -16,9 +16,7 @@
     "type-check": "tsc --noEmit",
     "build": "tsc",
     "prepare": "husky",
-    "prepublishOnly": "npm run build",
-    "versioning:prerelease": "npm version prerelease",
-    "publish:prerelease": "npm publish --tag alpha"
+    "prepublishOnly": "npm run build"
   },
   "lint-staged": {
     "*.{js,ts}": [
