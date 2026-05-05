@@ -1,21 +1,16 @@
-interface Student {
-  name: string;
-  score: number;
+import type { Person, PersonConstructor } from "./utils/person";
+
+type PersonConstructorParametersName =
+  ConstructorParameters<PersonConstructor>[0];
+
+export function createPerson(
+  Ctor: PersonConstructor,
+  name: Person["name"],
+  age: Person["age"],
+) {
+  return new Ctor(name, age);
 }
 
-interface Worker {
-  name: string;
-  salary: number;
+export function createIntern(name: PersonConstructorParametersName) {
+  console.log(name);
 }
-
-interface Intern extends Student, Worker {
-  duration: number;
-}
-
-const intern: Intern = {
-  name: "fg",
-  score: 20,
-  salary: 100,
-  duration: 2,
-};
-console.log(intern);

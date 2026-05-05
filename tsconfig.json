@@ -8,12 +8,13 @@
     "outDir": "./dist",
 
     "allowJs": true,
-    "checkJs": true,
+    // "checkJs": true,
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
-    "target": "esnext",
-    "moduleResolution": "nodenext",
+    "module": "esnext",
+    "target": "es2015",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
     // "allowSyntheticDefaultImports": true,
     // "types": [],
     // For nodejs:
