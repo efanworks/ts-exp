@@ -10,3 +10,5 @@ export function createPerson(name: Person["name"], age: Person["age"]) {
 export function createIntern(name: PersonConstructorParametersName) {
   console.log(name);
 }
+
+console.log("hello world");
