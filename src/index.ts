@@ -11,4 +11,4 @@ export function createIntern(name: PersonConstructorParametersName) {
   console.log(name);
 }
 
-console.log("hello world");
+console.log("hello");
