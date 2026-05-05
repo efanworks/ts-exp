@@ -2,11 +2,10 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   // "exclude": ["eslint.config.ts", "dist"],
   "include": ["src/**/*"],
+  "exclude": ["src/tests"],
   "compilerOptions": {
-    // File Layout
-    "rootDir": "./src",
-    "outDir": "./dist",
-
+    "rootDir": "src",
+    "outDir": "dist/types",
     "allowJs": true,
     // "checkJs": true,
     // Environment Settings
@@ -25,7 +24,8 @@
     // Other Outputs
     "sourceMap": false,
     "declaration": true,
-    "declarationMap": false,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
 
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
@@ -46,6 +46,6 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true,
+    "skipLibCheck": true
   }
 }

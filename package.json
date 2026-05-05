@@ -3,18 +3,17 @@
   "version": "1.2.0-alpha.0",
   "description": "",
   "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/cjs/index.cjs"
     }
   },
   "scripts": {
     "test": "node src/tests/index.js",
     "type-check": "tsc --noEmit",
-    "build": "rollup --config rollup.config.js",
+    "build": "rm -rf dist && rollup --config rollup.config.js && tsc",
     "prepare": "husky",
     "prepublishOnly": "npm run build"
   },
