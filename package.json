@@ -17,7 +17,7 @@
     "build": "tsc",
     "prepare": "husky",
     "prepublishOnly": "npm run build",
-    "versioning:prerelease": "npm version prerelease --preid alpha",
+    "versioning:prerelease": "npm version prerelease",
     "publish:prerelease": "npm publish --tag alpha"
   },
   "lint-staged": {
