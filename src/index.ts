@@ -1,14 +1,10 @@
-import type { Person, PersonConstructor } from "./utils/person";
+import { Person, type PersonConstructor } from "./utils/person";
 
 type PersonConstructorParametersName =
   ConstructorParameters<PersonConstructor>[0];
 
-export function createPerson(
-  Ctor: PersonConstructor,
-  name: Person["name"],
-  age: Person["age"],
-) {
-  return new Ctor(name, age);
+export function createPerson(name: Person["name"], age: Person["age"]) {
+  return new Person(name, age);
 }
 
 export function createIntern(name: PersonConstructorParametersName) {
