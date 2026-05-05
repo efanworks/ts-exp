@@ -29,7 +29,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
     "react": "^19.2.5"
   },
   "devDependencies": {
