@@ -10,6 +10,8 @@ export default {
       preserveModules: true,
       preserveModulesRoot: "src",
       entryFileNames: "[name].mjs",
+      sourcemap: true,
+      sourcemapExcludeSources: false,
     },
     {
       dir: "dist/cjs",
@@ -17,6 +19,8 @@ export default {
       preserveModules: true,
       preserveModulesRoot: "src",
       entryFileNames: "[name].cjs",
+      sourcemap: true,
+      sourcemapExcludeSources: false,
     },
   ],
   plugins: [
