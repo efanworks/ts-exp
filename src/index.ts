@@ -3,6 +3,12 @@ import { Person, type PersonConstructor } from "./utils/person";
 type PersonConstructorParametersName =
   ConstructorParameters<PersonConstructor>[0];
 
+/**
+ * 创建 Person 实例
+ * @param name 姓名
+ * @param age 年龄
+ * @returns
+ */
 export function createPerson(name: Person["name"], age: Person["age"]) {
   return new Person(name, age);
 }
