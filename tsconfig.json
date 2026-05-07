@@ -4,7 +4,7 @@
   "exclude": ["src/tests"],
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "dist/types",
+    "outDir": "dist",
     "allowJs": true,
     "checkJs": true,
     // Environment Settings
@@ -21,10 +21,11 @@
     // and npm install -D @types/node
 
     // Other Outputs
-    "sourceMap": false,
+    "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
     "emitDeclarationOnly": true,
+    "declarationDir": "dist/types",
 
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,

@@ -11,4 +11,16 @@ export function createIntern(name: PersonConstructorParametersName) {
   console.log(name);
 }
 
-console.log("hello world");
+export interface Student {
+  name: string;
+  age: number;
+  score: number;
+}
+
+const stu: Student = {
+  name: "fg",
+  age: 10,
+  score: 100,
+};
+
+console.log(stu, "hello");
